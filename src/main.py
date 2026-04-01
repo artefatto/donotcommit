@@ -26,9 +26,7 @@ TEMPLATES: Final = tuple(GITIGNORE_FOLDER.rglob('*.gitignore'))
 
 @app.get('/', response_class=HTMLResponse, include_in_schema=False)
 def read_root(request: Request):
-    return templates.TemplateResponse(
-        'index.html', context={'request': request}
-    )
+    return templates.TemplateResponse(request=request, name='index.html')
 
 
 @app.get('/api/list', response_class=PlainTextResponse)
