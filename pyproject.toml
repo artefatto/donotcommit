@@ -24,6 +24,9 @@ dev = [
     "taskipy>=1.14.1",
 ]
 
+[tool.fastapi]
+entrypoint = "src.main:app"
+
 [tool.ruff]
 line-length = 79
 
