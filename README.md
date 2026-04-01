@@ -1,6 +1,6 @@
 # Do not commit it
 I once committed a file I should have ignored. Do you know what happened? A coworker's computer exploded. Now you know this is serious, so you should consider using our API.  
-This API wil be compliant with [gitignore.io](https://www.toptal.com/developers/gitignore) by toptal, so you can just change your request from: 
+This API will be compliant with [gitignore.io](https://www.toptal.com/developers/gitignore) by toptal, so you can just change your request from: 
 
 `toptal.com/developers/gitignore/api/` to `donotcommit.com/api/`
 
@@ -28,8 +28,8 @@ To set up the development environment, you'll need to have Python 3.13 installed
   Clone the repository with the submodule.
 
    ```sh
-   git clone --recurse-submodules git@github.com:avantguarda/donotcommit.git
-   cd donotcommit.com
+   git clone --recurse-submodules git@github.com:artefatto/donotcommit.git
+   cd donotcommit
    ```
 
 2. **Install uv:**
