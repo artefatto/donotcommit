@@ -14,7 +14,7 @@ For now, we are using [github/gitignore](https://github.com/github/gitignore) as
 
 ## Clients
 Use one client to make your life easier when managing gitignore files:  
-- zignr: <https://github.com/ivansantiagojr/zignr>
+- omit: <https://github.com/artefatto/omit>
 - ignoreme: <https://github.com/devid8642/ignoreme>
 - ignr.py: <https://github.com/Antrikshy/ignr.py>
 
