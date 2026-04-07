@@ -20,6 +20,14 @@ Use one client to make your life easier when managing gitignore files:
 
 You can list your client here, just open a PR!
 
+### Git alias
+Don't want to install a client? We got you, run the following command on your terminal to create a custom git "command":
+```sh
+ git config --global alias.ignore '!gi() { IFS=","; curl -L -s "https://donotcommit.com/api/$*" | tee .gitignore;}; gi'
+ ```
+
+Then, you are able to run `git ignore zig,python` and get a perfect `.gitignore` file created on the current directory.
+
 ## Contributing
 ### Setting Up the Development Environment
 To set up the development environment, you'll need to have Python 3.13 installed. You should use [uv](https://docs.astral.sh/uv/) to manage dependencies and run commands.
