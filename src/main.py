@@ -34,10 +34,11 @@ def read_root(request: Request):
 def custom_http_exception_handler(
     request: Request, exc: StarletteHTTPException
 ):
-    if exc.status_code == 404:
+    if exc.status_code == HTTPStatus.NOT_FOUND:
         if request.url.path.startswith('/api'):
             return JSONResponse(
-                status_code=404, content={'detail': 'Not Found'}
+                status_code=HTTPStatus.NOT_FOUND,
+                content={'detail': 'Not Found'},
             )
 
         return templates.TemplateResponse(
