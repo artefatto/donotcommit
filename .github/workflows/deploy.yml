@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
       - uses: astral-sh/setup-uv@v7
       - run: uv run fastapi deploy
         env:
